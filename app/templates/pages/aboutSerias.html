@@ -1,0 +1,30 @@
+{% extends 'pages/home.html' %}
+
+
+{% load static %}
+
+
+{% block body %}
+
+
+    <div class="main">
+
+        
+        <span class="description">
+            <h1 class="header">What does this series about:</h1>
+            <br>
+            <h4>{{ info.about|linebreaksbr }}</h4><br>
+            
+            <h4>You can whatch it here <a href="{{info.link}}">Link</a></h4>
+            
+        </span>
+
+    </div>
+
+    
+        
+    
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/seriesName.css' %}">
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% load static %}
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="{% url 'app:user' %}">Home</a>
+        <a href="{% url 'app:userProjects' %}">My projects</a>
+        <a href="{% url 'app:series' %}">Info anout Series</a>
+        <a href="{% url 'app:seriesChar' %}">Series Characters</a>
+        <a href="{% url 'app:about' %}">About</a>
+    </div>
+    
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    {% block body %}
+        <h1>Home of Series</h1>
+
+        
+        
+
+        
+        
+    {% endblock %}
+
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/homePage.css' %}">
+    <script type="text/javascript" src="{% static 'styles/animation.js' %}"></script>
+</body>
+</html>

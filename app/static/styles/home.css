@@ -1,0 +1,116 @@
+body {
+    background: -webkit-linear-gradient(green, black);
+  
+    /* For Mozilla Firefox */
+    background: -moz-linear-gradient(green, black);
+    
+    /* For Opera */
+    background: -o-linear-gradient(green, black);
+    
+    /* Standard syntax */
+    background: linear-gradient(green, black);
+
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+.container {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+#rickImg {
+    width: 350px;
+    height: 250px;
+}
+
+
+#mortyImg {
+    width: 360px;
+    height: 210px;
+}
+
+
+#jerryImg {
+    width: 300px;
+    height: 310px;
+}
+
+
+.shortDescription {
+    color: rgb(243, 243, 243);
+}
+
+
+#mainDiv {
+    background-color: rgba(101, 118, 139, 0.61);
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+#wrapperDiv {
+        
+    padding-top: 25px;
+    margin-top: 25px;
+    /* background-color: white; */
+    width: 360px;
+    height: 260px;
+}
+
+
+
+.caption {
+    display: block;
+    text-align: left;
+}
+
+
+
+#header {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-top: 25px;
+    padding-right: 100px;
+    margin-top: 25px;
+}
+
+.rickH {
+    font-size: 55px;
+    
+}
+
+.rickH {
+    font-size: 70px;
+    color: #ffffff;
+    text-align: center;
+    -webkit-animation: rickH 1s ease-in-out infinite alternate;
+    -moz-animation: rickH 1s ease-in-out infinite alternate;
+    animation: rickH 1s ease-in-out infinite alternate;
+  }
+  
+@-webkit-keyframes rickH {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px #1f8f10, 0 0 60px #24d7e4, 0 0 70px #1b4b149d;
+    }
+    to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px #25759b, 0 0 40px #2130b8, 0 0 50px #489e0e, 
+                   0 0 60px #35d1d6, 0 0 70px #194d26, 0 0 80px #1de2d2;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+{% extends 'pages/home.html' %}
+{% load static %}
+{% block body %}
+
+
+    
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+       
+        {% for content in user_content_list %}
+            <p>{{ content.content_text }}</p>
+            
+            <img width="500" height="300" src="{{ content.image }}" alt="User Image">
+        {% endfor %}    
+
+        <br><br>
+        
+        <label for="text">Text:</label>
+        <input type="text" name="text" required>
+        <br><br>
+        
+        <label for="image">Image:</label>
+        <input type="file" name="image" accept="image/*" required>
+        <br><br>
+        
+        <!-- User Content Section -->
+        <label for="content_text">Content Text:</label>
+        <input type="text" name="content_text" required>
+        <br><br>
+    
+        <button type="submit">Add Series</button>
+    </form>
+
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'pages/home.html' %}
+{% load static %}
+
+
+{% block body %}
+
+
+    <h1 class="threeD">Read about favorite Series </h1>
+
+
+    <div class="container">
+
+        {% for j in movieName %}
+        
+            <div id="mainDiv">
+                <div id="wrapperDiv">      
+
+                    <a href="{% url 'app:serieasDetails' pk=j.id %}"><img id="photo" src="{{ j.image.url }}" alt=""></a>
+            
+                        <h2 class="name">{{ j.createName }}</h2>
+                        <br>
+                        
+                </div>
+            </div>
+
+        
+
+        {% endfor %}
+
+    </div>
+
+    
+
+    <link rel="stylesheet" href="{% static 'styles/series.css' %}">
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'pages/home.html' %}
+
+{% load static %}
+
+{% block body %}
+
+    <h1>Choice Series</h1>
+
+   
+    <div class="container">
+
+        {% for j in char %}
+        
+            <div id="mainDiv">
+                <div id="wrapperDiv">      
+
+                    <a href="{% url 'app:userChar' pk=j.id %}"><img id="photo" src="{{ j.image.url }}" alt=""></a>
+            
+                        <h2 class="name">{{ j.createName }}</h2>
+                        <br>
+                        
+                </div> 
+            </div>
+
+        
+
+        {% endfor %}
+
+    </div>
+
+    
+
+    <link rel="stylesheet" href="{% static 'styles/series.css' %}">
+
+{% endblock %}

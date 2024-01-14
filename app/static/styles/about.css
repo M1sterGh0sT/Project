@@ -1,0 +1,117 @@
+body {
+    background-color: rgba(0, 0, 0, 0.849);
+    padding-bottom: 200px;
+}
+
+
+
+.store {
+    margin-top: 10px;
+}
+
+
+.head {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    font-size: 23px;
+}
+
+
+
+
+.made {
+    padding-top: 10px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+
+#name {
+    --border-right: 6px;
+    --text-stroke-color: rgb(15, 161, 15);
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    font-size: 30px;
+    
+}
+
+
+.contacts {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.774);
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    width: 70%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#contactsInfo {
+    --border-right: 6px;
+    --text-stroke-color: rgba(253, 253, 253, 0.911);
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.tableContact {
+    width: 100%;
+}
+
+
+
+.info {
+    padding-top: 10px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 240px;
+}
+
+
+

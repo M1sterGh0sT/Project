@@ -1,0 +1,62 @@
+{% extends 'pages/home.html' %}
+{% load static %}
+
+{% block body %}
+
+    <h1 class="headerText">Create Character</h1>
+
+    <div class="main">
+        <div class="wrapper">
+            <form class="form" method="post" enctype="multipart/form-data">
+                
+                {% csrf_token %}
+
+                <input type="hidden" name="series_id" value="{{ series.id }}">
+
+                <div>
+                    <span class="nameInp">Full Name:</span><input type="text" class="seriesName" name="createName" required>
+                    <br>
+                </div>
+                
+                <div>
+                    <br><br><br><br>
+                    <span class="nameInp">Quote:</span><input type="text" class="seriesName" name="link" required>
+                    <br>
+                </div>
+                
+                <div>
+                    <br><br><br><br>
+                    <span class="nameInp">Planet/From:</span><input type="text" class="seriesName" name="link" required>
+                    <br>
+                </div>
+                
+                <div>
+                    <br><br><br>
+                    <span class="nameInp">Image:</span><input type="file" name="image" accept="image/*" required>
+                    <br>
+                </div>
+                <br><br><br>
+
+
+                <div>
+                    <br><br><br>
+                    <h3 class="header" id="description">Description:</h3>
+                    <textarea name="about" class='description' rows="20" cols="100"></textarea>
+                    <br>
+                </div>
+                
+
+                
+                <button type="submit" class="button1" id="createChar">
+                    <span class="actual-text">&nbsp;Create_Char&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;Create_Char&nbsp;</span>
+                </button> 
+                
+            </form>
+        </div>
+
+    </div>
+
+    <link rel="stylesheet" href="{% static 'styles/createSeries.css' %}">
+
+{% endblock %}

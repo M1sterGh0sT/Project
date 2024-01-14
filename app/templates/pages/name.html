@@ -1,0 +1,27 @@
+{% extends 'pages/home.html' %}
+{% load static %}
+
+
+{% block body %}
+
+    
+    <br>
+    <div class="main">
+        <div class="wrapped">
+
+            <img  class="photo" src="{{ char.image.url }}" alt="{{ char.created_date }}">
+            <br><br>
+            <h1 class="charName">{{ char.name }}</h1>
+            
+            
+        </div>
+        <span class="description">
+            <br>
+            <h4>{{ char.description|linebreaksbr }}</h4>
+         </span>
+    </div>
+
+    
+
+<link rel="stylesheet" href="{% static 'styles/character.css' %}">
+{% endblock %}

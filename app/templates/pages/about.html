@@ -1,0 +1,45 @@
+{% extends 'pages/home.html' %}
+{% load static %}
+
+
+{% block body %}
+
+    <div class="store">
+
+        <div class="made">
+            <p><span class="head">Made by</span><span id="name"><strong>M1sterGh0sT</strong></span></p>
+        </div>
+        
+
+        <h3 class="head">This web application is designed for educational purposes.<br><br>
+            The main purpose of the application is to get to know the best series and their characters, 
+            also you can create yuor own series and characters for it. <br><br>
+            I hope that this project will inspire someone to watch at least one of the series or create their own.</h3>
+
+
+        <div class="info">
+            <h3 class="contact" id="contactsInfo">Contacts:</h3>
+            <table class="tableContact">
+                <th>
+                    <td> <a href="https://www.linkedin.com/in/daniil-mykytenko-b038aa2a3/" target="_blank" rel="noopener noreferrer"><h3 class="contacts">LinkedIn</h3></a></td>
+            
+                    <td><a href="https://github.com/M1sterGh0sT" target="_blank" rel="noopener noreferrer"> <h3 class="contacts">GitHub</h3></a> </td>
+                </th>
+            </table>
+
+
+
+        </div>
+
+
+
+
+        
+    </div>
+    
+
+   
+
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
+
+{% endblock %}

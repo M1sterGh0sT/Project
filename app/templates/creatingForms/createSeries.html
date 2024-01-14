@@ -1,0 +1,52 @@
+{% extends 'pages/home.html' %}
+{% load static %}
+
+{% block body %}
+
+    <h1 class="headerText">Create Your Series</h1>
+
+    <div class="main">
+        <div class="wrapper">
+            <form class="form" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <div>
+                    <span class="nameInp">Name:</span><input type="text" class="seriesName" name="createName" required>
+                    <br>
+                </div>
+                
+                <div>
+                    <br><br><br>
+                    <h3 class="header" id="description">Description:</h3>
+                    <textarea name="about" class='description' rows="20" cols="100"></textarea>
+                    <br>
+                </div>
+                
+                <div>
+                    <br><br><br><br>
+                    <span class="nameInp">Link to the series:</span><input type="text" class="seriesName" name="link" required>
+                    <br>
+                </div>
+                
+                <div>
+                    <br><br><br>
+                    <span class="nameInp">Image:</span><input type="file" name="image" accept="image/*" required>
+                    <br>
+                </div>
+                <br><br><br>
+                
+
+                
+                <button type="submit" class="button1">
+                    <span class="actual-text">&nbsp;Create_Series&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;Create_Series&nbsp;</span>
+                </button> 
+                
+            </form>
+        </div>
+
+    </div>
+
+    <link rel="stylesheet" href="{% static 'styles/createSeries.css' %}">
+
+{% endblock %}

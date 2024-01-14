@@ -1,0 +1,76 @@
+body {
+    background-image: linear-gradient(45deg, transparent 20%, rgb(34, 34, 34) 25%, transparent 25%), 
+                      linear-gradient(-45deg, transparent 20%, rgb(15, 15, 15) 25%, transparent 25%), 
+                      linear-gradient(-45deg, transparent 75%, rgb(48, 48, 48) 80%, transparent 0),
+                      radial-gradient(rgba(255, 255, 255, 0.801) 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+    background-color: rgba(39, 39, 39, 0.979);
+  }
+
+
+
+
+
+.threeD {
+    color: rgba(255, 255, 255, 0.596);
+    white-space: nowrap;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.7em;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+      1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+      5px 13px 15px black;
+}
+  
+.threeD:hover {
+    transition: 0.3s;
+    transform: scale(1.1) translate(-50%, -50%);
+    text-shadow: 1px -1px 0 rgb(128, 128, 128), 1px -2px 0 grey, 1px -3px 0 grey,
+        1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+        1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+}
+
+#photo {
+    width: 430px;
+    height: 280px;
+}
+
+
+.container {
+    padding-top: 100px;
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+#mainDiv {
+    background-color: rgba(73, 73, 73, 0.829);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+#wrapperDiv {
+    padding-top: 25px;
+    margin-top: 25px;
+    width: 430px;
+    height: 270px;
+}
+
+.name {
+    color: aliceblue;
+    text-shadow: 2px, 3px, 0px black;
+    text-align: center;
+}
+
+
+#header {
+    text-align: center;
+}

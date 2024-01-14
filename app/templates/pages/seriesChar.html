@@ -1,0 +1,38 @@
+{% extends 'pages/home.html' %}
+{% load static %}
+
+{% block body %}
+
+<h1 class="threeD">Find your favorite character</h1>
+
+    <div class="container">
+
+        
+            
+        {% for j in movie %}
+        
+            <div id="mainDiv">
+                
+
+                <a href="{% url 'app:index' pk=j.id %}" style="text-decoration:none">
+                    <div id="wrapperDiv">      
+
+                        <img id="photo" src="{{ j.image.url }}" alt="">
+                
+                            <h2 class="name">{{ j.createName }}</h2>
+                            <br>
+                             
+                    </div>
+                </a>
+            </div>
+
+        
+
+        {% endfor %}
+
+    </div>
+
+
+    <link rel="stylesheet" href="{% static 'styles/char.css' %}">
+
+{% endblock %}

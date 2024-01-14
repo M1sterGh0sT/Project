@@ -1,0 +1,110 @@
+{% extends 'pages/home.html' %}
+{% load static %}
+{% load bootstrap_icons %}
+
+{% block body %}
+
+    <div class="login-Logout">
+        <table class="table">
+            <th>
+                <td>
+                    <a href="{% url 'app:login' %}">
+
+                        <button class="button1">
+                            <span class="actual-text">&nbsp;LogIn&nbsp;</span>
+                            <span aria-hidden="true" class="hover-text">&nbsp;LogIn&nbsp;</span>
+                        </button> 
+                    </a>
+                </td>
+
+
+                <td>
+                    <a href="{% url 'app:register' %}">
+
+                        <button class="button1" >
+                            <span class="actual-text">&nbsp;Register&nbsp;</span>
+                            <span aria-hidden="true" class="hover-text">&nbsp;Register&nbsp;</span>
+                        </button> 
+                    </a>
+                </td>
+
+
+                <td>
+                    <a href="{% url 'app:logout' %}">
+
+                        <button class="button1">
+                            <span class="actual-text">&nbsp;Logout&nbsp;</span>
+                            <span aria-hidden="true" class="hover-text">&nbsp;Logout&nbsp;</span>
+                        </button> 
+                    </a>
+                </td>
+
+                </td>
+
+                <td>
+                    <a href="{% url 'app:userProjects' %}">
+                        <button class="button1">
+                            <span class="actual-text">&nbsp;Projects&nbsp;</span>
+                            <span aria-hidden="true" class="hover-text">&nbsp;Projects&nbsp;</span>
+                        </button> 
+                    </a>
+                </td>
+
+            </th>
+
+        </table>
+    
+    </div>
+    
+
+
+
+    <div class="storeSearch">
+
+        <div class="userName">
+            {% if user.is_authenticated %}
+            <h1 class="userName"> Welcome <br><br>{{ user.username }} </h1>
+            {% else %}
+                <h1>You are stay logout</h1>
+            {% endif %}
+        </div>
+
+        <div id="form">
+            <form method="get" action="{% url 'app:search_view' %}">
+                <input type="text" class="search" name="query" placeholder="Find Series" value="{{ query }}">
+                <button class="search-button" type="submit">{% bs_icon 'search' %}</button>
+            </form>
+        </div>
+        
+    </div>
+    
+    
+    
+
+    <div class="container">
+        {% if query %}
+    
+            {% for j in all_series %}
+
+                <div id="mainDiv">
+                    <div id="wrapperDiv">      
+
+                        <a href="{% url 'app:index' pk=j.id %}"><img id="photo" src="{{ j.image.url }}" alt=""></a>
+                
+                            <h2 class="name">{{ j.createName }}</h2>
+                            <br>
+                            
+                    </div> 
+                </div>
+
+            {% endfor %}
+        {% endif %}
+    </div>
+
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/user.css' %}">
+
+{% endblock %}
+
+

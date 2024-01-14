@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(-15deg, #1c0a35, #7038c0,#8a37ff, #2b5fc7, #5d6e92, 
+    #082e81,#004adf, #4b7e08, #82b60a, #a9b918,#f5f5f5,  #d7e934, #e7ff0f);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  
+
+
+.main {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
+.wrapped {
+    text-align: center;
+}
+
+
+.description {
+    display: block;
+    text-align: left;
+}
+
+
+.charName {
+    size: 50px;
+}
+
+
+
+.photo {
+    width: 500px;
+    height: 310px;
+}

@@ -1,0 +1,185 @@
+body {
+    background-color: rgba(0, 0, 0, 0.849);
+    padding-bottom: 200px;
+}
+
+
+
+#photo {
+    width: 430px;
+    height: 280px;
+}
+
+
+.container {
+    padding-top: 10px;
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+#mainDiv {
+    background-color: rgba(73, 73, 73, 0.829);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+#wrapperDiv {
+    padding-top: 25px;
+    margin-top: 25px;
+    width: 430px;
+    height: 270px;
+}
+
+.name {
+    color: aliceblue;
+    text-shadow: 2px, 3px, 0px black;
+    text-align: center;
+}
+
+
+
+
+.userName {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.userName:hover {
+    color: #37FF8B;
+    text-shadow: 5px 0px 40px 5px rgb(156, 255, 8);
+}
+
+
+#userNameProjects {
+    padding-top: 40px;
+}
+
+
+.storeSearch {
+    padding-top: 130px;
+}
+
+
+.search {
+    background-color: rgba(44, 45, 46, 0.76);
+    width: 450px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffffff;
+
+    padding: 8px;
+    border: 1px solid #267571;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+
+.search:hover {
+    color: #37FF8B;
+    box-shadow: 5px 5px 10px 3px rgb(105, 109, 105);
+}
+
+#form {
+    padding-top: 10px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+.search-button {
+    padding: 8px;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+}
+
+.search-button:hover {
+    background-color: #37FF8B;
+    box-shadow: 5px 5px 10px 3px rgb(115, 124, 115);
+}
+
+
+
+.table {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    width: 50%;
+}
+
+
+
+
+.button1 {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+  
+
+.button1 {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button1:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
