@@ -33,10 +33,6 @@ class UserSeries(models.Model):
     createName = models.CharField(max_length=255)
     about = models.TextField(blank=True)
     link = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='app/static/photos/icons')
-
-    def __str__(self):
-        return self.createName
 
 
 class UserCharacter(models.Model):
@@ -44,12 +40,10 @@ class UserCharacter(models.Model):
     name = models.CharField(max_length=255)
     planet = models.CharField(max_length=255)
     quote = models.CharField(max_length=255)
-    image = models.ImageField(upload_to ='app/static/photos')
     description = models.TextField(blank=True)
     created_date = models.DateTimeField(auto_now_add=True)
 
 
-    def __str__(self):
-        return self.name
+
 
 
